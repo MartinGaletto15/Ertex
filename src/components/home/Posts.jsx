@@ -1,14 +1,13 @@
 import React from 'react';
-import { connect } from 'react-redux'; // ✅ Corregido: importación desde react-redux
+import { connect } from 'react-redux';
 
-// Recibimos 'nfts' como prop desde el store
 const Posts = ({ nfts }) => {
 
   return (
     <section className="bg-gray-900 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         
-        {/* Encabezado de sección */}
+        
         <div className="flex justify-between items-end mb-12">
           <div>
             <h2 className="text-3xl font-bold text-white mb-2 uppercase tracking-tighter">
@@ -21,15 +20,15 @@ const Posts = ({ nfts }) => {
           </button>
         </div>
 
-        {/* Grid de NFTs */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {/* ✅ Corregido: nft es el string del link, usamos el índice 'i' para la key */}
+          
           {nfts && nfts.map((nft, i) => (
             <div 
               key={i} 
               className="bg-gray-800/50 border border-gray-700 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all duration-300 group shadow-xl"
             >
-              {/* Imagen del NFT */}
+              
               <div className="relative aspect-square overflow-hidden bg-black/20">
                 <img 
                   src={nft} 
@@ -41,7 +40,7 @@ const Posts = ({ nfts }) => {
                 </div>
               </div>
 
-              {/* Info del NFT */}
+              
               <div className="p-5">
                 <h3 className="text-sm font-mono text-blue-400 mb-4 truncate">
                     {nft}
@@ -65,7 +64,7 @@ const Posts = ({ nfts }) => {
           ))}
         </div>
 
-        {/* Mensaje si no hay NFTs */}
+        
         {nfts.length === 0 && (
             <div className="text-center py-20 border-2 border-dashed border-gray-800 rounded-3xl">
                 <p className="text-gray-500 italic">Aún no has minteado ningún NFT en esta colección.</p>
@@ -81,5 +80,4 @@ const mapStateToProps = state => ({
   nfts: state.ethereum.nfts
 });
 
-// ✅ Corregido: connect en minúscula y exportación correcta
 export default connect(mapStateToProps, {})(Posts);

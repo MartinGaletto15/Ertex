@@ -28,7 +28,7 @@ contract ERC721Enumerable is IERC721Enumerable, ERC721 {
         _addTokensToAllTokenEnumeration(tokenId);
     }
 
-    // agregar token a la matriz _allTokens
+    
     function _addTokensToAllTokenEnumeration(uint256 tokenId) private {
         _allTokensIndex[tokenId] = _allTokens.length;
         _allTokens.push(tokenId);
@@ -39,7 +39,7 @@ contract ERC721Enumerable is IERC721Enumerable, ERC721 {
         _ownedTokens[to].push(tokenId);
     }
 
-    // retorna un token especifico
+    
     function tokenByIndex(uint256 index) public override view returns (uint256){
         require(index < totalSupply(), 'Global index out of bounds');
         return _allTokens[index];

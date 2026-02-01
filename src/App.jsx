@@ -4,6 +4,7 @@ import store from "./store";
 import Home from "./containers/pages/Home";
 import MainLayout from "./hocs/Layout";
 import Create from "./containers/pages/Create";
+import Eror404 from "./containers/pages/Eror404";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
           </Route>
+          <Route path="*" element={<Eror404 />} />
         </Routes>
       </BrowserRouter>
     </Provider>

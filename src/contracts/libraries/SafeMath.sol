@@ -3,7 +3,7 @@
 pragma solidity ^0.8.21;
 
 library SafeMath {
-    // suma
+    
     function add(uint256 x, uint256 y) internal pure returns(uint256){
         uint256 r = x + y;
         require(r >= x, 'SafeMath: addition overflow');
@@ -16,9 +16,9 @@ library SafeMath {
         return r;
     }
 
-    // optimizar uso de gas en multiplicacion
+    
     function mul(uint256 x, uint256 y) internal pure returns(uint256){
-        // Optizacion para 0
+        
         if (x == 0){
             return 0;
         }

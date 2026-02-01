@@ -7,8 +7,6 @@ import "./libraries/SafeMath.sol";
 import "./libraries/Counters.sol";
 import "./ERC165.sol";
 
-// Mintear tokens
-
 contract ERC721 is ERC165, IERC721 {
     using SafeMath for uint256;
     using Counters for Counters.Counter;
@@ -17,7 +15,7 @@ contract ERC721 is ERC165, IERC721 {
 
     mapping(address => Counters.Counter) private _ownedTokensCount;
 
-    // Verificar tokens aprobados
+    
     mapping(uint256 => address) private _tokenApprovals;
 
     constructor(){
@@ -37,27 +35,27 @@ contract ERC721 is ERC165, IERC721 {
         return owner;
     }
 
-    // verifica si el token existe
+    
     function _exists(uint256 tokenId) internal view returns (bool) {
         address owner = _tokenOwner[tokenId];
         return owner != address(0);
     }
 
     function _mint(address to, uint256 tokenId) internal virtual {
-        // revisar que el address no es cero
+        
         require(to != address(0), "ERC721: minting to zero address");
-        // tokenID no debee existir
+        
         require(!_exists(tokenId), "ERC721: minting to zero address");
 
-        // apuntar a direccion del dueño
+        
         _tokenOwner[tokenId] = to;
-        // cuantos tokens tiene el dueño
+        
         _ownedTokensCount[to].increment();
 
         emit Transfer(address(0), to, tokenId);
     }
 
-    // debemos llamar a esta funcion para aumentar la seguridad
+    
     function _transferFrom(address _from, address _to, uint256 _tokenId) internal{
         require(_to != address(0), "Error - ERC721 transfer to zero address");
         require(ownerOf(_tokenId) == _from, "Trying to transfer a token the address does not own");

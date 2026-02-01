@@ -6,29 +6,72 @@ Este proyecto es el resultado de un desarrollo intensivo de 4 semanas enfocado e
 
 ## 🛠️ Stack Tecnológico
 
-* **Frontend:** React.js con Hooks.
-* **Estado Global:** Redux (con arquitectura de Actions/Reducers limpios).
-* **Blockchain:** Web3.js para la comunicación con Smart Contracts.
-* **Estilos:** Tailwind CSS con un diseño *Dark Mode* y efectos de *Glassmorphism*.
-* **Provider:** Integración nativa con MetaMask.
+*   **Frontend:** React.js con Hooks.
+*   **Estado Global:** Redux (con arquitectura de Actions/Reducers limpios).
+*   **Blockchain:** Web3.js para la comunicación con Smart Contracts.
+*   **Estilos:** Tailwind CSS con un diseño *Dark Mode* y efectos de *Glassmorphism*.
+*   **Provider:** Integración nativa con MetaMask.
 
 ---
 
 ## ✨ Características Principales
 
 ### 1. Módulo de Minting Estilizado
-* **Interfaz Widescreen:** Con previsualización de imagen dinámica y diseño adaptable.
-* **Detección de Cuenta:** Reconocimiento en tiempo real de la cuenta conectada y red de la blockchain.
-* **Validación Inteligente:** Lógica de habilitación de botones basada en la conexión de la wallet y la integridad de los datos de entrada.
+
+*   **Interfaz Widescreen:** Con previsualización de imagen dinámica y diseño adaptable.
+*   **Detección de Cuenta:** Reconocimiento en tiempo real de la cuenta conectada y red de la blockchain.
+*   **Validación Inteligente:** Lógica de habilitación de botones basada en la conexión de la wallet y la integridad de los datos de entrada.
 
 ### 2. Galería de Colecciones
-* **Renderizado Dinámico:** Los activos se obtienen directamente de la Blockchain mediante llamadas al contrato.
-* **Visualización de Metadatos:** Presentación de URIs de cada NFT con identificadores únicos e insignias de verificación.
-* **Experiencia de Usuario:** Tarjetas con efectos de hover y transiciones fluidas para una navegación moderna.
+
+*   **Renderizado Dinámico:** Los activos se obtienen directamente de la Blockchain mediante llamadas al contrato.
+*   **Visualización de Metadatos:** Presentación de URIs de cada NFT con identificadores únicos e insignias de verificación.
+*   **Experiencia de Usuario:** Tarjetas con efectos de hover y transiciones fluidas para una navegación moderna.
 
 ### 3. Gestión de Datos Optimizada
-* **Estructura Plana:** Implementación de un estado de Redux limpio para evitar anidamientos, mejorando la eficiencia del renderizado.
-* **Sincronización:** Refresco automático del `totalSupply` y la lista de activos inmediatamente después de cada transacción confirmada.
+
+*   **Estructura Plana:** Implementación de un estado de Redux limpio para evitar anidamientos, mejorando la eficiencia del renderizado.
+*   **Sincronización:** Refresco automático del `totalSupply` y la lista de activos inmediatamente después de cada transacción confirmada.
+
+---
+
+## 📦 Instalación
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/tu-usuario/ertex-nft-marketplace.git
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Configurar el entorno:**
+    *   Crear un archivo `.env` en la raíz del proyecto.
+    *   Añadir las siguientes variables de entorno:
+        ```
+        REACT_APP_INFURA_KEY=tu-infura-key
+        REACT_APP_CONTRACT_ADDRESS=la-direccion-de-tu-contrato
+        ```
+
+---
+
+## 🚀 Uso
+
+1.  **Iniciar la aplicación:**
+    ```bash
+    npm start
+    ```
+2.  **Abrir en el navegador:**
+    *   La aplicación se abrirá en `http://localhost:3000`.
+3.  **Conectar MetaMask:**
+    *   Asegúrate de tener la extensión de MetaMask instalada en tu navegador.
+    *   Conecta tu wallet a la aplicación.
+
+---
+
+## 🌐 Despliegue
+
+El proyecto está desplegado en [Vercel](https://ertex-nft-marketplace.vercel.app/) (este es un enlace de ejemplo).
 
 ---
 
@@ -44,3 +87,4 @@ ethereum: {
   totalSupply: "7",         // Contador global de tokens
   nfts: ["http...1", "http...2", ...] // Array limpio de URIs
 }
+```

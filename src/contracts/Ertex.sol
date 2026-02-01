@@ -6,7 +6,6 @@ import './ERC721Connector.sol';
 
 contract Ertex is ERC721Connector {
 
-    // matriz para guardar NFTs
     string[] public ErtexNFTS;
 
     mapping(string => bool) _ertexExists;
