@@ -39,7 +39,7 @@ Este proyecto se desarrolló con la intencion de iniciar en el mundo de **Web3.0
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/tu-usuario/ertex-nft-marketplace.git
+    git clone https://github.com/MartinGaletto15/Ertex.git
     ```
 2.  **Instalar dependencias:**
     ```bash
@@ -59,6 +59,7 @@ Este proyecto se desarrolló con la intencion de iniciar en el mundo de **Web3.0
 3.  **Conectar MetaMask:**
     *   Asegúrate de tener la extensión de MetaMask instalada en tu navegador.
     *   Conecta tu wallet a la aplicación.
+    *   USA UNA CUENTA CON ETHER DE PRUEBA.
 
 ---
 
