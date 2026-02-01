@@ -1,4 +1,5 @@
 import logo from "../../containers/img/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -18,9 +19,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Empresa</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition">Sobre nosotros</a></li>
-              <li><a href="#" className="hover:text-white transition">Carreras</a></li>
-              <li><a href="#" className="hover:text-white transition">Blog</a></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Sobre nosotros</Link></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Carreras</Link></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Blog</Link></li>
             </ul>
           </div>
 
@@ -28,9 +29,9 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Soporte</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition">Ayuda</a></li>
-              <li><a href="#" className="hover:text-white transition">Privacidad</a></li>
-              <li><a href="#" className="hover:text-white transition">Términos</a></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Ayuda</Link></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Privacidad</Link></li>
+              <li><Link to="/inprogress" className="hover:text-white transition">Términos</Link></li>
             </ul>
           </div>
 

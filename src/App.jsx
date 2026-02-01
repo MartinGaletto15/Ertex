@@ -14,6 +14,7 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
+            <Route path="/inprogress" element={<Eror404 />} />
           </Route>
           <Route path="*" element={<Eror404 />} />
         </Routes>

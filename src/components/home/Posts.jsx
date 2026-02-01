@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 const Posts = ({ nfts }) => {
@@ -15,9 +15,9 @@ const Posts = ({ nfts }) => {
             </h2>
             <p className="text-gray-400">Explora tus activos digitales creados en la red.</p>
           </div>
-          <button className="hidden sm:block text-blue-400 hover:text-blue-300 font-medium transition">
+          <Link to="/inprogress" className="hidden sm:block text-blue-400 hover:text-blue-300 font-medium transition">
             Ver colección completa →
-          </button>
+          </Link>
         </div>
 
         

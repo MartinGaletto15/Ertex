@@ -70,7 +70,7 @@ const Navbar = ({
           {/* Menú Escritorio */}
           <div className="hidden md:flex space-x-8 items-center">
             <button
-              onClick={() => handleNavigation('/resources')}
+              onClick={() => handleNavigation('/inprogress')}
               className="text-gray-300 hover:text-white font-medium transition duration-150 text-sm uppercase tracking-wider"
             >
               Recursos
@@ -112,7 +112,7 @@ const Navbar = ({
         <div className="md:hidden bg-gray-900 border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <button
-              onClick={() => handleNavigation('/resources')}
+              onClick={() => handleNavigation('/inprogress')}
               className="block w-full text-left px-3 py-2 text-gray-300 hover:bg-gray-800 hover:text-white rounded-md text-sm uppercase"
             >
               Recursos

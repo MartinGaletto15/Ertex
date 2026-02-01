@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import noun from '../../ertex/noun.png'
 
 const Banner = () => {
@@ -25,12 +26,12 @@ const Banner = () => {
             Tu puerta de entrada al fascinante mundo del arte digital y los coleccionables exclusivos. Explora, invierte y sé parte del futuro.
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 font-bold text-lg shadow-lg">
+            <Link to="/inprogress" className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 font-bold text-lg shadow-lg">
               Explorar NFTs
-            </button>
-            <button className="bg-gray-800 text-gray-300 border border-gray-700 px-8 py-3 rounded-md hover:bg-gray-700 hover:border-gray-600 transition duration-300 font-bold text-lg shadow-lg">
+            </Link>
+            <Link to="/create" className="bg-gray-800 text-gray-300 border border-gray-700 px-8 py-3 rounded-md hover:bg-gray-700 hover:border-gray-600 transition duration-300 font-bold text-lg shadow-lg">
               Crea tu NFT
-            </button>
+            </Link>
           </div>
         </div>
 
