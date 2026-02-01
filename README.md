@@ -45,13 +45,6 @@ Este proyecto de iniciacion en **Web3.0** y gestión de estado complejo con **Re
     ```bash
     npm install
     ```
-3.  **Configurar el entorno:**
-    *   Crear un archivo `.env` en la raíz del proyecto.
-    *   Añadir las siguientes variables de entorno:
-        ```
-        REACT_APP_INFURA_KEY=tu-infura-key
-        REACT_APP_CONTRACT_ADDRESS=la-direccion-de-tu-contrato
-        ```
 
 ---
 
@@ -62,18 +55,13 @@ Este proyecto de iniciacion en **Web3.0** y gestión de estado complejo con **Re
     npm start
     ```
 2.  **Abrir en el navegador:**
-    *   La aplicación se abrirá en `http://localhost:3000`.
+    *   La aplicación se abrirá en `http://localhost:[puerto]`.
 3.  **Conectar MetaMask:**
     *   Asegúrate de tener la extensión de MetaMask instalada en tu navegador.
     *   Conecta tu wallet a la aplicación.
 
 ---
 
-## 🌐 Despliegue
-
-El proyecto está desplegado en [Vercel](https://ertex-nft-marketplace.vercel.app/) (este es un enlace de ejemplo).
-
----
 
 ## 🏗️ Arquitectura del Estado (Redux)
 
