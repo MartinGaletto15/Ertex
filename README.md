@@ -1,6 +1,6 @@
 # 🚀 Ertex NFT Marketplace
 
-Este proyecto de iniciacion en **Web3.0** y gestión de estado complejo con **Redux**. La aplicación permite a los usuarios conectar su wallet de MetaMask, mintear activos digitales únicos y visualizar su colección en tiempo real.
+Este proyecto se desarrolló con la intencion de iniciar en el mundo de **Web3.0** y gestión de estado complejo con **Redux**. La aplicación permite a los usuarios conectar su wallet de MetaMask, mintear activos digitales únicos y visualizar su colección en tiempo real.
 
 ---
 
@@ -52,7 +52,7 @@ Este proyecto de iniciacion en **Web3.0** y gestión de estado complejo con **Re
 
 1.  **Iniciar la aplicación:**
     ```bash
-    npm start
+    npm run dev
     ```
 2.  **Abrir en el navegador:**
     *   La aplicación se abrirá en `http://localhost:[puerto]`.
